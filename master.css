@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Fugaz One", cursive;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgb(48, 0, 32), rgb(35, 0, 43));
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+header h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header ul li {
+  margin: 0 15px;
+  padding: 10px;
+}
+header ul li a {
+  padding: 10px;
+}
+header ul li a:hover {
+  color: rgb(233, 24, 215);
+  background-color: thistle;
+  border-radius: 30px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+#moon {
+  mix-blend-mode: screen;
+  transform: translateY(80px);
+}
+.hero .txt {
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  transform: translateY(-140px);
+}
+
+.content {
+  color: white;
+  padding: 30px;
+}
+.content h2 {
+  margin: 20px;
+  font-size: 30px;
+}
+.content p {
+  margin: 20px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to top, rgb(48, 0, 32), transparent);
+}
